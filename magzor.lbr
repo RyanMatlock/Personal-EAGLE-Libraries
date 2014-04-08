@@ -1289,7 +1289,7 @@ end</text>
 <gate name="G$1" symbol="RESISTOR-US" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RESISTOR-1/2W">
+<device name="-1/2W" package="RESISTOR-1/2W">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

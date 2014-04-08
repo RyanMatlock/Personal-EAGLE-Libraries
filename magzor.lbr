@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -442,12 +442,9 @@
 </package>
 <package name="ATMEGA2561-TQFP">
 <wire x1="-6.5" y1="7" x2="-7" y2="6.5" width="0.127" layer="21"/>
-<wire x1="-7" y1="6.5" x2="-7" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="-7" y1="-6.5" x2="-6.5" y2="-7" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-7" x2="6.5" y2="-7" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-7" x2="7" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="7" y1="-6.5" x2="7" y2="6.5" width="0.127" layer="21"/>
-<wire x1="7" y1="6.5" x2="6.5" y2="7" width="0.127" layer="21"/>
+<wire x1="-7" y1="6.5" x2="-7" y2="-7" width="0.127" layer="21"/>
+<wire x1="-7" y1="-7" x2="7" y2="-7" width="0.127" layer="21"/>
+<wire x1="7" y1="-7" x2="7" y2="6.5" width="0.127" layer="21"/>
 <wire x1="6.5" y1="7" x2="-6.5" y2="7" width="0.127" layer="21"/>
 <circle x="-5.4" y="5.4" radius="0.4" width="0.127" layer="21"/>
 <smd name="1" x="-7.8" y="6" dx="1.6" dy="0.55" layer="1"/>
@@ -581,6 +578,8 @@
 <rectangle x1="-5.7" y1="7.3" x2="-4.7" y2="7.7" layer="51" rot="R270"/>
 <rectangle x1="-4.9" y1="7.3" x2="-3.9" y2="7.7" layer="51" rot="R270"/>
 <rectangle x1="-6.5" y1="7.3" x2="-5.5" y2="7.7" layer="51" rot="R270"/>
+<wire x1="7" y1="6.5" x2="7" y2="7" width="0.127" layer="21"/>
+<wire x1="7" y1="7" x2="6.5" y2="7" width="0.127" layer="21"/>
 </package>
 <package name="ATMEL-TQFP64">
 <wire x1="7.036" y1="7.036" x2="7.036" y2="-7.036" width="0.1524" layer="21"/>

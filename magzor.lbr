@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -625,6 +625,135 @@
 <rectangle x1="-6.5524" y1="7.4041" x2="-5.4602" y2="7.8613" layer="51" rot="R270"/>
 </package>
 <package name="USB-MICRO-TYPE-B-FCI-10103594-REV2">
+<smd name="3/D+" x="0" y="0" dx="0.4" dy="1.75" layer="1"/>
+<smd name="2/D-" x="-0.65" y="0" dx="0.4" dy="1.75" layer="1"/>
+<smd name="4/ID" x="0.65" y="0" dx="0.4" dy="1.75" layer="1"/>
+<smd name="5/GND" x="1.3" y="0" dx="0.4" dy="1.75" layer="1"/>
+<smd name="1/VCC" x="-1.3" y="0" dx="0.4" dy="1.75" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="-1.9" y="0.85"/>
+<vertex x="-3.9" y="0.85"/>
+<vertex x="-3.9" y="-0.61"/>
+<vertex x="-1.9" y="-0.61"/>
+</polygon>
+<hole x="-2.43" y="0.12" drill="1.05"/>
+<smd name="P$1" x="-2.43" y="0.12" dx="1.6" dy="1.6" layer="16"/>
+<polygon width="0" layer="1">
+<vertex x="1.9" y="0.85"/>
+<vertex x="3.9" y="0.85"/>
+<vertex x="3.9" y="-0.61"/>
+<vertex x="1.9" y="-0.61"/>
+</polygon>
+<hole x="2.43" y="0.32" drill="0.66"/>
+<hole x="2.43" y="-0.08" drill="0.66"/>
+<hole x="2.43" y="0.12" drill="0.66"/>
+<smd name="P$2" x="2.43" y="0.12" dx="1.05" dy="1.46" layer="16"/>
+<polygon width="0" layer="1">
+<vertex x="0.25" y="-1.91"/>
+<vertex x="1.68" y="-1.91"/>
+<vertex x="1.68" y="-4.41"/>
+<vertex x="0.25" y="-4.41"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="2.08" y="-0.86"/>
+<vertex x="3.9" y="-0.86"/>
+<vertex x="3.9" y="-1.56"/>
+<vertex x="3.38" y="-1.56"/>
+<vertex x="3.38" y="-3.61" curve="-90"/>
+<vertex x="2.98" y="-4.01"/>
+<vertex x="2.73" y="-4.01"/>
+<vertex x="2.48" y="-4.01" curve="-90"/>
+<vertex x="2.08" y="-3.61"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-0.25" y="-1.91"/>
+<vertex x="-1.68" y="-1.91"/>
+<vertex x="-1.68" y="-4.41"/>
+<vertex x="-0.25" y="-4.41"/>
+</polygon>
+<hole x="2.73" y="-3.18" drill="0.66"/>
+<hole x="2.73" y="-2.64" drill="0.66"/>
+<hole x="2.73" y="-3" drill="0.66"/>
+<hole x="2.73" y="-2.82" drill="0.66"/>
+<polygon width="0" layer="16">
+<vertex x="2.73" y="-4.01"/>
+<vertex x="2.98" y="-4.01" curve="90"/>
+<vertex x="3.38" y="-3.61"/>
+<vertex x="3.38" y="-2.91"/>
+<vertex x="3.38" y="-2.21" curve="90"/>
+<vertex x="2.98" y="-1.81"/>
+<vertex x="2.73" y="-1.81"/>
+<vertex x="2.48" y="-1.81" curve="90"/>
+<vertex x="2.08" y="-2.21"/>
+<vertex x="2.08" y="-2.91"/>
+<vertex x="2.08" y="-3.61" curve="90"/>
+<vertex x="2.48" y="-4.01"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-2.08" y="-0.86"/>
+<vertex x="-3.9" y="-0.86"/>
+<vertex x="-3.9" y="-1.56"/>
+<vertex x="-3.38" y="-1.56"/>
+<vertex x="-3.38" y="-3.61" curve="90"/>
+<vertex x="-2.98" y="-4.01"/>
+<vertex x="-2.73" y="-4.01"/>
+<vertex x="-2.48" y="-4.01" curve="90"/>
+<vertex x="-2.08" y="-3.61"/>
+</polygon>
+<hole x="-2.73" y="-2.91" drill="1.2"/>
+<smd name="P$3" x="-2.73" y="-2.91" dx="1.8" dy="1.8" layer="16"/>
+<wire x1="5.36" y1="-4.61" x2="-5.21" y2="-4.61" width="0.1" layer="105"/>
+<text x="4.46" y="-4.39" size="0.4064" layer="105">PCB
+end</text>
+<polygon width="0" layer="29">
+<vertex x="-1.8" y="-1.8"/>
+<vertex x="-0.1" y="-1.8"/>
+<vertex x="-0.1" y="-4.5"/>
+<vertex x="-1.8" y="-4.5"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="0.1" y="-1.8"/>
+<vertex x="1.8" y="-1.8"/>
+<vertex x="1.8" y="-4.5"/>
+<vertex x="0.1" y="-4.5"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="2" y="-0.8"/>
+<vertex x="4" y="-0.8"/>
+<vertex x="4" y="-1.7"/>
+<vertex x="3.5" y="-1.7"/>
+<vertex x="3.5" y="-3.8" curve="-90"/>
+<vertex x="3.1" y="-4.1"/>
+<vertex x="2.4" y="-4.1" curve="-90"/>
+<vertex x="2" y="-3.8"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-4" y="1"/>
+<vertex x="-1.8" y="1"/>
+<vertex x="-1.8" y="-0.7"/>
+<vertex x="-4" y="-0.7"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-4" y="-0.8"/>
+<vertex x="-2" y="-0.8"/>
+<vertex x="-2" y="-3.3"/>
+<vertex x="-2" y="-3.7" curve="-90"/>
+<vertex x="-2.4" y="-4.1"/>
+<vertex x="-2.8" y="-4.1"/>
+<vertex x="-3.1" y="-4.1" curve="-90"/>
+<vertex x="-3.5" y="-3.7"/>
+<vertex x="-3.5" y="-2.6"/>
+<vertex x="-3.5" y="-1.7"/>
+<vertex x="-4" y="-1.7"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="4" y="1"/>
+<vertex x="4" y="-0.7"/>
+<vertex x="1.8" y="-0.7"/>
+<vertex x="1.8" y="1"/>
+</polygon>
+</package>
+<package name="USB-MICRO-TYPE-B-FCI-10103594-REV3">
 <smd name="3/D+" x="0" y="0" dx="0.4" dy="1.75" layer="1"/>
 <smd name="2/D-" x="-0.65" y="0" dx="0.4" dy="1.75" layer="1"/>
 <smd name="4/ID" x="0.65" y="0" dx="0.4" dy="1.75" layer="1"/>

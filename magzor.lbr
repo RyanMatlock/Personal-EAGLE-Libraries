@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -124,7 +124,9 @@
 </layers>
 <library>
 <packages>
-<package name="USB-A-FCI-87520">
+<package name="USB-A">
+<description>thru hole;
+FCI p/n: 87520</description>
 <wire x1="-6.55" y1="-10.3" x2="6.55" y2="-10.3" width="0.127" layer="21"/>
 <wire x1="-6.55" y1="-10.3" x2="-6.55" y2="3.7" width="0.127" layer="21"/>
 <wire x1="6.55" y1="-10.3" x2="6.55" y2="3.7" width="0.127" layer="21"/>
@@ -999,7 +1001,8 @@ end</text>
 <vertex x="1.8" y="1"/>
 </polygon>
 </package>
-<package name="RESISTOR-1/2W">
+<package name="R-1/2W">
+<description>1/2W, 0.5"/12.7mm grid spacing</description>
 <wire x1="6.35" y1="0" x2="5.08" y2="0" width="0.6096" layer="51"/>
 <wire x1="-6.35" y1="0" x2="-5.08" y2="0" width="0.6096" layer="51"/>
 <wire x1="-4.318" y1="1.27" x2="-4.064" y2="1.524" width="0.1524" layer="21" curve="-90"/>
@@ -16001,7 +16004,9 @@ end</text>
 <text x="-8" y="-7" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <circle x="6.25" y="-4.75" radius="0.353553125" width="0.127" layer="21"/>
 </package>
-<package name="INDUCTOR-12.5MMX12.5MM-(COILTRONICS-DR127)">
+<package name="L-DR127">
+<description>inductor: Coiltronics DR127
+12.5mm x 12.5mm</description>
 <smd name="1" x="-4.97" y="0" dx="3.85" dy="5.5" layer="1"/>
 <smd name="2" x="4.97" y="0" dx="3.85" dy="5.5" layer="1"/>
 <wire x1="-6.25" y1="-6.25" x2="-6.25" y2="6.25" width="0.127" layer="51"/>
@@ -16017,7 +16022,8 @@ end</text>
 <text x="-6.25" y="6.75" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-6.25" y="-8" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
-<package name="DIODE-VISHAY-MICRO-SMP">
+<package name="MICRO-SMP">
+<description>diode: Vishay Micro SMP package</description>
 <smd name="ANODE" x="1.25" y="0" dx="0.8" dy="0.8" layer="1"/>
 <smd name="CATHODE" x="-0.65" y="0" dx="2" dy="1.1" layer="1"/>
 <wire x1="-1.1" y1="0.65" x2="-0.75" y2="0.65" width="0.127" layer="51"/>
@@ -16048,7 +16054,8 @@ end</text>
 <wire x1="1.778" y1="-0.762" x2="-1.778" y2="-0.762" width="0.127" layer="39"/>
 <wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0.762" width="0.127" layer="39"/>
 </package>
-<package name="JST-1X02-2.5MM">
+<package name="JST-1X02">
+<description>2.5mm pitch</description>
 <wire x1="-3.77" y1="2.4" x2="-2.47" y2="2.4" width="0.127" layer="21"/>
 <wire x1="-2.47" y1="2.4" x2="-2.17" y2="2.4" width="0.127" layer="21"/>
 <wire x1="-2.17" y1="2.4" x2="-1.17" y2="2.4" width="0.127" layer="21"/>
@@ -16113,7 +16120,8 @@ end</text>
 <vertex x="1.651" y="1.397"/>
 </polygon>
 </package>
-<package name="JST-1X02-2.5MM-PWR">
+<package name="JST-1X02-PWR">
+<description>2.5mm pitch</description>
 <wire x1="-3.77" y1="2.4" x2="-2.47" y2="2.4" width="0.127" layer="21"/>
 <wire x1="-2.47" y1="2.4" x2="-2.17" y2="2.4" width="0.127" layer="21"/>
 <wire x1="-2.17" y1="2.4" x2="-1.17" y2="2.4" width="0.127" layer="21"/>
@@ -16659,7 +16667,9 @@ RST</text>
 <wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="39"/>
 <wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="39"/>
 </package>
-<package name="CRYSTAL-4.88MM(0.192&quot;)-PITCH">
+<package name="Y-4.88MM">
+<description>crystal oscillator
+(16MHz = FOXSLF/160-20)</description>
 <wire x1="5.53" y1="0" x2="3.2" y2="2.33" width="0.127" layer="21" curve="90"/>
 <wire x1="3.2" y1="2.33" x2="-3.2" y2="2.33" width="0.127" layer="21"/>
 <wire x1="-3.2" y1="2.33" x2="-5.53" y2="0" width="0.127" layer="21" curve="90"/>
@@ -16687,6 +16697,7 @@ RST</text>
 <text x="-3.048" y="2.794" size="1.016" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="HEADER-1X03-SERVO">
+<description>single servo header</description>
 <wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
@@ -16740,7 +16751,8 @@ RST</text>
 <wire x1="1.651" y1="-2.032" x2="-1.651" y2="-2.032" width="0.127" layer="39"/>
 <wire x1="-1.651" y1="-2.032" x2="-1.651" y2="2.032" width="0.127" layer="39"/>
 </package>
-<package name="QFN20_0.65X0.3-PADS">
+<package name="QFN20_">
+<description>0.65mm x 0.3mm pad (not enough space for OSH Park DRC)</description>
 <wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-2" y1="2" x2="2" y2="2" width="0.0762" layer="51"/>
 <wire x1="2" y1="2" x2="2" y2="-2" width="0.0762" layer="51"/>
@@ -17327,7 +17339,9 @@ RST</text>
 <wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.2032" layer="21"/>
 </package>
-<package name="SWITCH-6MM-TACTILE-C&amp;K-PST645">
+<package name="SW-SPST-6MM-SMT">
+<description>6mm SMT tactile switch
+C&amp;K PST645</description>
 <wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="21"/>
 <wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="21"/>
 <wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="21"/>
@@ -17410,7 +17424,8 @@ RST</text>
 <wire x1="-3.556" y1="-4.445" x2="-3.556" y2="4.445" width="0.127" layer="39"/>
 <wire x1="-3.556" y1="4.445" x2="-3.429" y2="4.445" width="0.127" layer="39"/>
 </package>
-<package name="SWITCH-6MM-TACTILE-THRU-HOLE">
+<package name="SW-SPST-6MM">
+<description>6mm tactile switch, thru hole</description>
 <wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="21"/>
 <wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="21"/>
 <wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="21"/>
@@ -17431,8 +17446,10 @@ RST</text>
 <pad name="3" x="-3.25" y="-2.25" drill="1.05" shape="octagon"/>
 <pad name="4" x="3.25" y="-2.25" drill="1.05" shape="octagon"/>
 </package>
-<package name="RESISTOR-ARRAY-2R-PANASONIC-EXBV4V">
-<description>1.6mm x 1.6mm</description>
+<package name="RN-EXBV4V">
+<description>resistor array (2X R)
+Panasonic EXBV4V
+1.6mm x 1.6mm</description>
 <wire x1="-0.75" y1="0.75" x2="-0.55" y2="0.75" width="0.1016" layer="51"/>
 <wire x1="-0.25" y1="0.75" x2="0.25" y2="0.75" width="0.1016" layer="51"/>
 <wire x1="0.55" y1="0.75" x2="0.75" y2="0.75" width="0.1016" layer="51"/>
@@ -17611,8 +17628,9 @@ RST</text>
 <text x="-2.54" y="-18.288" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <text x="-2.54" y="17.018" size="1.27" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="CAPACITOR-ARRAY-2C-CKCM25">
-<description>1.37mm x 1mm</description>
+<package name="CN-CKCM25">
+<description>capacitor array (2X C)
+1.37mm x 1mm</description>
 <smd name="1" x="-0.32" y="-0.375" dx="0.3" dy="0.45" layer="1"/>
 <smd name="2" x="0.32" y="-0.375" dx="0.3" dy="0.45" layer="1"/>
 <smd name="3" x="0.32" y="0.375" dx="0.3" dy="0.45" layer="1"/>
@@ -17634,8 +17652,9 @@ RST</text>
 <text x="-0.7" y="-1.6" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
 <text x="-0.7" y="0.8" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="CAPACITOR-ARRAY-4C-CKCA43">
-<description>3.2mm x 1.6mm</description>
+<package name="CN-CKCA43">
+<description>capacitor array (4X C)
+3.2mm x 1.6mm</description>
 <smd name="1" x="-1.2" y="-0.825" dx="0.4" dy="1" layer="1"/>
 <smd name="2" x="-0.4" y="-0.825" dx="0.4" dy="1" layer="1"/>
 <smd name="3" x="0.4" y="-0.825" dx="0.4" dy="1" layer="1"/>
@@ -17661,9 +17680,9 @@ RST</text>
 <text x="-1.6" y="1.5" size="1.016" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.6" y="-2.5" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 </package>
-<package name="CAPACITOR-ARRAY-2C-CKCL22">
-<description>2mm x 1.25mm
-(note that CKCL22X7R1E104M085AA, the 0.1uF from TDK, is 25V, not 50V like a lot of the lower capacitance chips, but it's still better than other manufacturers)</description>
+<package name="CN-CKCL22">
+<description>capacitor array (2X C)
+2mm x 1.25mm</description>
 <smd name="1" x="-0.5" y="-0.5" dx="0.5" dy="0.6" layer="1"/>
 <smd name="2" x="0.5" y="-0.5" dx="0.5" dy="0.6" layer="1"/>
 <smd name="3" x="0.5" y="0.5" dx="0.5" dy="0.6" layer="1"/>
@@ -17685,7 +17704,8 @@ RST</text>
 <text x="-1" y="1" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 <text x="-1" y="-1.8" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
 </package>
-<package name="QFN32_0.75X0.3-PADS">
+<package name="QFN32_">
+<description>0.75mm x 0.3mm pads (not enough space for OSH Park DRC)</description>
 <circle x="-2.175" y="2.175" radius="0.15" width="0" layer="21"/>
 <wire x1="-2.45" y1="2.45" x2="2.45" y2="2.45" width="0.1016" layer="51"/>
 <wire x1="2.45" y1="2.45" x2="2.45" y2="-2.45" width="0.1016" layer="51"/>
@@ -20174,7 +20194,7 @@ logo</text>
 <gate name="G$1" symbol="HEADER-1X04" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-USB-A" package="USB-A-FCI-87520">
+<device name="-USB-A" package="USB-A">
 <connects>
 <connect gate="G$1" pin="1" pad="+5V"/>
 <connect gate="G$1" pin="2" pad="D-"/>
@@ -20254,7 +20274,7 @@ logo</text>
 <gate name="G$1" symbol="RESISTOR-US" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-1/2W" package="RESISTOR-1/2W">
+<device name="-1/2W" package="R-1/2W">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -20378,7 +20398,7 @@ logo</text>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-DR127" package="INDUCTOR-12.5MMX12.5MM-(COILTRONICS-DR127)">
+<device name="-DR127" package="L-DR127">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -20415,7 +20435,7 @@ logo</text>
 <gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MSS2P2-M3/89A" package="DIODE-VISHAY-MICRO-SMP">
+<device name="MSS2P2-M3/89A" package="MICRO-SMP">
 <connects>
 <connect gate="G$1" pin="A" pad="ANODE"/>
 <connect gate="G$1" pin="C" pad="CATHODE"/>
@@ -20431,7 +20451,7 @@ logo</text>
 <gate name="G$1" symbol="HEADER-1X02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-2.5MM" package="JST-1X02-2.5MM">
+<device name="-2.5MM" package="JST-1X02">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -20440,7 +20460,7 @@ logo</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-2.5MM-PWR" package="JST-1X02-2.5MM-PWR">
+<device name="-2.5MM-PWR" package="JST-1X02-PWR">
 <connects>
 <connect gate="G$1" pin="1" pad="1/V+"/>
 <connect gate="G$1" pin="2" pad="2/GND"/>
@@ -20653,7 +20673,7 @@ logo</text>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-4.88MM(0.192&quot;)-PITCH" package="CRYSTAL-4.88MM(0.192&quot;)-PITCH">
+<device name="-4.88MM(0.192&quot;)-PITCH" package="Y-4.88MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -20721,7 +20741,7 @@ logo</text>
 <gate name="G$1" symbol="CAN-CONTROLLER-MCP2515" x="0" y="0"/>
 </gates>
 <devices>
-<device name="*ML" package="QFN20_0.65X0.3-PADS">
+<device name="*ML" package="QFN20_">
 <connects>
 <connect gate="G$1" pin="CLKOUT" pad="1"/>
 <connect gate="G$1" pin="CS" pad="16"/>
@@ -20840,7 +20860,7 @@ logo</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-MU(1)" package="QFN32_0.75X0.3-PADS">
+<device name="-MU(1)" package="QFN32_">
 <connects>
 <connect gate="G$1" pin="AVCC" pad="32"/>
 <connect gate="G$1" pin="D+" pad="29"/>
@@ -21170,7 +21190,7 @@ logo</text>
 <gate name="G$1" symbol="SWITCH-SPST" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-6MM-TACT-SMD" package="SWITCH-6MM-TACTILE-C&amp;K-PST645">
+<device name="-6MM-TACT-SMD" package="SW-SPST-6MM-SMT">
 <connects>
 <connect gate="G$1" pin="P" pad="3 4"/>
 <connect gate="G$1" pin="S" pad="1 2"/>
@@ -21179,7 +21199,7 @@ logo</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-6MM-TACT-THRU-HOLE" package="SWITCH-6MM-TACTILE-THRU-HOLE">
+<device name="-6MM-TACT-THRU-HOLE" package="SW-SPST-6MM">
 <connects>
 <connect gate="G$1" pin="P" pad="3 4"/>
 <connect gate="G$1" pin="S" pad="1 2"/>
@@ -21263,7 +21283,7 @@ logo</text>
 <gate name="B" symbol="RESISTOR-US-PAD-VISIBLE" x="0" y="-2.54" swaplevel="1"/>
 </gates>
 <devices>
-<device name="-EXBV4V" package="RESISTOR-ARRAY-2R-PANASONIC-EXBV4V">
+<device name="-EXBV4V" package="RN-EXBV4V">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="4"/>
@@ -21322,7 +21342,7 @@ logo</text>
 <gate name="B" symbol="CAPACITOR-PAD-VISIBLE" x="5.08" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="-CKCM25" package="CAPACITOR-ARRAY-2C-CKCM25">
+<device name="-CKCM25" package="CN-CKCM25">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="4"/>
@@ -21333,7 +21353,7 @@ logo</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-CKCL22" package="CAPACITOR-ARRAY-2C-CKCL22">
+<device name="-CKCL22" package="CN-CKCL22">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="4"/>
@@ -21354,7 +21374,7 @@ logo</text>
 <gate name="D" symbol="CAPACITOR-PAD-VISIBLE" x="12.7" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="-CKCA43" package="CAPACITOR-ARRAY-4C-CKCA43">
+<device name="-CKCA43" package="CN-CKCA43">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="8"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7990,11 +7990,8 @@ Panasonic EXBS8V
 <wire x1="-0.635" y1="-2.54" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.905" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="0" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
 <text x="-3.302" y="-3.556" size="0.635" layer="21" font="vector">GND</text>
 <text x="-0.762" y="-3.556" size="0.635" layer="21" font="vector">VCC</text>
 <text x="1.778" y="-3.556" size="0.635" layer="21" font="vector">SIG</text>
@@ -8004,14 +8001,11 @@ Panasonic EXBS8V
 <text x="-5.969" y="-1.778" size="1.016" layer="21" font="vector">+0</text>
 <text x="-5.969" y="0.762" size="1.016" layer="21" font="vector">+1</text>
 <wire x1="-3.81" y1="0" x2="-6.35" y2="0" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.905" x2="-4.445" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="2.54" x2="-4.445" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="1.905" x2="-5.715" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-1.905" x2="-4.445" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-2.54" x2="-5.715" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-5.715" y1="-2.54" x2="-6.35" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="1.905" x2="-6.35" y2="0" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="0" x2="-6.35" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="2.54" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="0" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
 </package>
 <package name="QFN20">
 <wire x1="-2" y1="2" x2="2" y2="2" width="0.0762" layer="51"/>
@@ -8860,6 +8854,42 @@ GND</text>
 <text x="1.778" y="-2.286" size="0.635" layer="21" font="vector">3V3</text>
 <text x="-3.81" y="-3.556" size="1.016" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.81" y="1.651" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="HEADER-2X03-SPARE-ANALOG">
+<circle x="-2.54" y="-3.048" radius="0.254" width="0.127" layer="22"/>
+<pad name="GND1" x="-2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="A6" x="0" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="+5V-1" x="2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="GND2" x="-2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="A7" x="0" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="+5V-2" x="2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<text x="5.334" y="-3.556" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="-4.064" y="-3.556" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.127" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.175" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="1.905" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="0.635" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="-0.635" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
+<text x="-3.302" y="-3.556" size="0.635" layer="21" font="vector">GND</text>
+<text x="1.778" y="-3.556" size="0.635" layer="21" font="vector">+5V</text>
+<text x="-0.508" y="-3.556" size="0.635" layer="21" font="vector">A6</text>
+<text x="-3.302" y="2.921" size="0.635" layer="21" font="vector">GND</text>
+<text x="1.778" y="2.921" size="0.635" layer="21" font="vector">+5V</text>
+<text x="-0.508" y="2.921" size="0.635" layer="21" font="vector">A7</text>
 </package>
 </packages>
 <symbols>
@@ -11791,6 +11821,27 @@ TI TXB0108</description>
 <connect gate="G$1" pin="SDA2" pad="7"/>
 <connect gate="G$1" pin="VCC1" pad="1"/>
 <connect gate="G$1" pin="VCC2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HEADER-2X03" prefix="J" uservalue="yes">
+<gates>
+<gate name="A" symbol="HEADER-1X03" x="0" y="10.16"/>
+<gate name="B" symbol="HEADER-1X03" x="0" y="-10.16"/>
+</gates>
+<devices>
+<device name="-A6-A7" package="HEADER-2X03-SPARE-ANALOG">
+<connects>
+<connect gate="A" pin="1" pad="+5V-1"/>
+<connect gate="A" pin="2" pad="A6"/>
+<connect gate="A" pin="3" pad="GND1"/>
+<connect gate="B" pin="1" pad="+5V-2"/>
+<connect gate="B" pin="2" pad="A7"/>
+<connect gate="B" pin="3" pad="GND2"/>
 </connects>
 <technologies>
 <technology name=""/>

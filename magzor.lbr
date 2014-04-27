@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6151,6 +6151,7 @@ for medium wire</description>
 <vertex x="1.778" y="1.143"/>
 <vertex x="1.651" y="1.397"/>
 </polygon>
+<circle x="-4.445" y="-0.076" radius="0.2" width="0.127" layer="21"/>
 </package>
 <package name="JST-1X02-PWR">
 <description>2.5mm pitch</description>
@@ -6200,10 +6201,10 @@ for medium wire</description>
 <circle x="-2.54" y="-0.076" radius="0.2" width="0.127" layer="22"/>
 <pad name="1/V+" x="-1.27" y="0" drill="0.9" shape="square"/>
 <pad name="2/GND" x="1.23" y="0" drill="0.9" shape="octagon"/>
-<text x="5.08" y="-0.762" size="0.889" layer="21" font="vector" rot="R90">GND</text>
-<text x="-3.81" y="2.794" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-3.81" y="-5.08" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-<text x="-4.191" y="-0.762" size="0.889" layer="21" font="vector" rot="R90">V+</text>
+<text x="0.254" y="2.667" size="0.889" layer="21" font="vector">GND</text>
+<text x="-3.81" y="3.81" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.81" y="-4.826" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-2.54" y="2.667" size="0.889" layer="21" font="vector">VCC</text>
 <text x="-1.27" y="0.889" size="0.6096" layer="51" font="vector">notch</text>
 <polygon width="0.0635" layer="51">
 <vertex x="-1.651" y="0.889"/>
@@ -6642,17 +6643,27 @@ OSH Park DRC complains about this</description>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
 <smd name="A" x="-0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="C" x="0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.524" y="1.016" size="1.016" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.524" y="-2.032" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<text x="-1.524" y="0.9525" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.524" y="-1.778" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
-<rectangle x1="0.127" y1="-0.254" x2="0.508" y2="0.254" layer="51"/>
-<text x="-2.286" y="-0.381" size="0.8128" layer="51" font="vector">A</text>
-<text x="1.778" y="-0.381" size="0.8128" layer="51" font="vector">C</text>
+<text x="2.032" y="-0.381" size="0.8128" layer="51" font="vector">C</text>
 <wire x1="-1.651" y1="0.889" x2="1.651" y2="0.889" width="0.127" layer="39"/>
 <wire x1="1.651" y1="0.889" x2="1.651" y2="-0.889" width="0.127" layer="39"/>
 <wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="39"/>
 <wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="39"/>
+<wire x1="1.778" y1="-0.762" x2="1.778" y2="0.762" width="0.127" layer="21"/>
+<wire x1="0.127" y1="0.254" x2="0.4445" y2="0.254" width="0.0762" layer="51"/>
+<wire x1="0.4445" y1="0.254" x2="0.4445" y2="-0.254" width="0.0762" layer="51"/>
+<wire x1="0.4445" y1="-0.254" x2="0.127" y2="-0.254" width="0.0762" layer="51"/>
+<wire x1="0.127" y1="0.254" x2="0.127" y2="-0.254" width="0.0762" layer="21"/>
+<polygon width="0.0762" layer="21">
+<vertex x="0.0635" y="0"/>
+<vertex x="-0.127" y="0.127"/>
+<vertex x="-0.127" y="-0.127"/>
+</polygon>
+<wire x1="0.127" y1="-0.254" x2="0.127" y2="0.254" width="0.0762" layer="51"/>
+<rectangle x1="0.127" y1="-0.254" x2="0.4445" y2="0.254" layer="51"/>
 </package>
 <package name="Y-4.88MM">
 <description>crystal oscillator

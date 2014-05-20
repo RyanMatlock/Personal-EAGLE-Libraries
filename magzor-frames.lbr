@@ -3799,8 +3799,8 @@
 <deviceset name="FRAME-LETTER">
 <description>11"x8.5" letter size paper</description>
 <gates>
-<gate name="G$1" symbol="FRAME-11&quot;WX8.5&quot;H" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0"/>
+<gate name="G$1" symbol="FRAME-11&quot;WX8.5&quot;H" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
@@ -3813,8 +3813,8 @@
 <deviceset name="FRAME-LEDGER">
 <description>17"x11" ledger size paper</description>
 <gates>
-<gate name="G$1" symbol="FRAME-17&quot;W-11&quot;H" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="325.12" y="0"/>
+<gate name="G$1" symbol="FRAME-17&quot;W-11&quot;H" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="325.12" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">

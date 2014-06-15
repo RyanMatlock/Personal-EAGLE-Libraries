@@ -347,7 +347,7 @@
 </devices>
 </deviceset>
 <deviceset name="PHONE-TRS" prefix="J" uservalue="yes">
-<description>Switchcraft 35RACP- series&lt;br&gt;
+<description>Switchcraft 35RACP-series 3.5mm horizontal stereo jack&lt;br&gt;
 2AHN2: TS (tip normalled)&lt;br&gt;
 3BHN2: TRS (tip normalled)&lt;br&gt;
 4BHN2: TRS (tip &amp; ring normalled)&lt;br&gt;

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -208,28 +208,28 @@
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="74HC595">
-<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
-<text x="-10.16" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-10.16" y="18.542" size="1.778" layer="95">&gt;NAME</text>
-<pin name="QA" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="QB" x="15.24" y="12.7" length="middle" rot="R180"/>
-<pin name="QC" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="QD" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="QE" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="QF" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="QG" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="QH" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="QH'" x="15.24" y="-15.24" length="middle" rot="R180"/>
-<pin name="VCC" x="-15.24" y="15.24" length="middle" direction="pwr"/>
-<pin name="GND" x="-15.24" y="-15.24" length="middle" direction="pwr"/>
-<pin name="SER" x="-15.24" y="10.16" length="middle"/>
-<pin name="RCLK" x="-15.24" y="-5.08" length="middle" function="clk"/>
-<pin name="OE" x="-15.24" y="-12.7" length="middle" function="dot"/>
-<pin name="SRCLR" x="-15.24" y="2.54" length="middle" function="dot"/>
-<pin name="SRCLK" x="-15.24" y="5.08" length="middle" function="clk"/>
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-12.7" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-12.7" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<pin name="QA" x="17.78" y="15.24" length="middle" rot="R180"/>
+<pin name="QB" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="QC" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="QD" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="QE" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="QF" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="QG" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="QH" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="QH'" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="VCC" x="-17.78" y="15.24" length="middle" direction="pwr"/>
+<pin name="GND" x="-17.78" y="-15.24" length="middle" direction="pwr"/>
+<pin name="SER/DS" x="-17.78" y="5.08" length="middle"/>
+<pin name="RCLK/STCP" x="-17.78" y="2.54" length="middle" function="clk"/>
+<pin name="OE" x="-17.78" y="-12.7" length="middle" function="dot"/>
+<pin name="SRCLR/MR" x="-17.78" y="12.7" length="middle" function="dot"/>
+<pin name="SRCLK/SHCP" x="-17.78" y="0" length="middle" function="clk"/>
 </symbol>
 <symbol name="PHONE-TRS">
 <wire x1="-5.08" y1="2.54" x2="-3.175" y2="2.54" width="0.254" layer="94"/>
@@ -334,10 +334,10 @@
 <connect gate="G$1" pin="QG" pad="6"/>
 <connect gate="G$1" pin="QH" pad="7"/>
 <connect gate="G$1" pin="QH'" pad="9"/>
-<connect gate="G$1" pin="RCLK" pad="12"/>
-<connect gate="G$1" pin="SER" pad="14"/>
-<connect gate="G$1" pin="SRCLK" pad="11"/>
-<connect gate="G$1" pin="SRCLR" pad="10"/>
+<connect gate="G$1" pin="RCLK/STCP" pad="12"/>
+<connect gate="G$1" pin="SER/DS" pad="14"/>
+<connect gate="G$1" pin="SRCLK/SHCP" pad="11"/>
+<connect gate="G$1" pin="SRCLR/MR" pad="10"/>
 <connect gate="G$1" pin="VCC" pad="16"/>
 </connects>
 <technologies>

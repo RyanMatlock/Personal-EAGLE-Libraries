@@ -614,7 +614,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCT6(2)H" uservalue="yes">
+<deviceset name="MCT6(2)H" prefix="U" uservalue="yes">
 <description>Vishay MCT6H, MCT62H Optocoupler, Phototransistor Output, Dual Channel</description>
 <gates>
 <gate name="A" symbol="OPTOCOUPLER" x="0" y="10.16" swaplevel="1"/>

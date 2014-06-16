@@ -225,11 +225,11 @@
 <pin name="QH'" x="17.78" y="-15.24" length="middle" rot="R180"/>
 <pin name="VCC" x="-17.78" y="15.24" length="middle" direction="pwr"/>
 <pin name="GND" x="-17.78" y="-15.24" length="middle" direction="pwr"/>
-<pin name="SER/DS" x="-17.78" y="5.08" length="middle"/>
-<pin name="RCLK/STCP" x="-17.78" y="2.54" length="middle" function="clk"/>
+<pin name="SER/DS" x="-17.78" y="2.54" length="middle"/>
+<pin name="RCLK/STCP" x="-17.78" y="0" length="middle" function="clk"/>
 <pin name="OE" x="-17.78" y="-12.7" length="middle" function="dot"/>
-<pin name="SRCLR/MR" x="-17.78" y="12.7" length="middle" function="dot"/>
-<pin name="SRCLK/SHCP" x="-17.78" y="0" length="middle" function="clk"/>
+<pin name="SRCLR/MR" x="-17.78" y="10.16" length="middle" function="dot"/>
+<pin name="SRCLK/SHCP" x="-17.78" y="-2.54" length="middle" function="clk"/>
 </symbol>
 <symbol name="PHONE-TRS">
 <wire x1="-5.08" y1="2.54" x2="-3.175" y2="2.54" width="0.254" layer="94"/>

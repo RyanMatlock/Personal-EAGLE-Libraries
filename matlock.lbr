@@ -305,6 +305,32 @@
 <text x="-17.5" y="3.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="19.25" y="-3.05" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 </package>
+<package name="EC12">
+<description>Alps EC12 series rotary encoders</description>
+<wire x1="-7" y1="2.3" x2="-7" y2="6.48" width="0.127" layer="21"/>
+<wire x1="-7" y1="6.48" x2="7" y2="6.48" width="0.127" layer="21"/>
+<wire x1="7" y1="6.48" x2="7" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-7" y1="-2.6" x2="-7" y2="-6.72" width="0.127" layer="21"/>
+<wire x1="-7" y1="-6.72" x2="-3.6" y2="-6.72" width="0.127" layer="21"/>
+<wire x1="3.6" y1="-6.72" x2="7" y2="-6.72" width="0.127" layer="21"/>
+<wire x1="7" y1="-6.72" x2="7" y2="-2.6" width="0.127" layer="21"/>
+<circle x="0" y="-0.12" radius="2.9732" width="0.127" layer="21"/>
+<circle x="0" y="-0.12" radius="2.147" width="0.127" layer="21"/>
+<circle x="-6" y="5.48" radius="0.5656" width="0.127" layer="21"/>
+<circle x="-6" y="-5.62" radius="0.5656" width="0.127" layer="21"/>
+<circle x="6" y="-5.72" radius="0.5656" width="0.127" layer="21"/>
+<circle x="6.1" y="5.48" radius="0.5656" width="0.127" layer="21"/>
+<pad name="C" x="0" y="-7.62" drill="1" shape="long" rot="R90"/>
+<pad name="A" x="-2.5" y="-7.62" drill="1" shape="long" rot="R90"/>
+<pad name="B" x="2.5" y="-7.62" drill="1" shape="long" rot="R90"/>
+<pad name="NC2" x="5.6" y="-0.12" drill="3" shape="square"/>
+<pad name="NC1" x="-5.6" y="-0.12" drill="3" shape="square"/>
+<text x="-2.94" y="-5.588" size="1.27" layer="51" font="vector">A</text>
+<text x="-0.4" y="-5.588" size="1.27" layer="51" font="vector">C</text>
+<text x="2.14" y="-5.588" size="1.27" layer="51" font="vector">B</text>
+<text x="-7.958" y="-6.758" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<text x="-7" y="6.9" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -466,6 +492,30 @@
 <vertex x="0.762" y="0.254"/>
 </polygon>
 <wire x1="-2.667" y1="-1.27" x2="-3.937" y2="-1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ROTARY-ENCODER">
+<pin name="C" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
+<pin name="A" x="-2.54" y="-7.62" visible="pin" length="short" rot="R90"/>
+<pin name="B" x="2.54" y="-7.62" visible="pin" length="short" rot="R90"/>
+<circle x="0" y="2.54" radius="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="4.318" x2="-1.778" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="4.445" x2="3.81" y2="4.445" width="0.254" layer="94" curve="-126.869898"/>
+<polygon width="0.254" layer="94">
+<vertex x="-3.81" y="4.445"/>
+<vertex x="-3.81" y="4.953"/>
+<vertex x="-3.3655" y="4.699"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="3.81" y="4.445"/>
+<vertex x="3.81" y="4.953"/>
+<vertex x="3.3655" y="4.6355"/>
+</polygon>
+<text x="-5.08" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="8.382" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -631,6 +681,23 @@
 <connect gate="B" pin="C" pad="3"/>
 <connect gate="B" pin="COL" pad="6"/>
 <connect gate="B" pin="EMIT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ROTARY-ENCODER" prefix="RE" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ROTARY-ENCODER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-EC12" package="EC12">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>

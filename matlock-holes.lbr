@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -41,14 +41,14 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -166,6 +166,31 @@
 <text x="-0.75" y="-4" size="1" layer="21" font="vector">M5</text>
 <hole x="0" y="0" drill="5.5"/>
 </package>
+<package name="M5-NUT">
+<description>height of M5 nut (distance between flat parts): 8mm&lt;br&gt;
+radius: ~4.6188mm&lt;br&gt;
+nut driver/socket head diameter: ~12mm (largest tDocu circle)&lt;br&gt;
+flanged nuts have a diameter of slightly less than 12mm, so this should work for them, too&lt;br&gt;
+(keepout and restrict layers taken from button head)</description>
+<wire x1="1" y1="0" x2="0" y2="1" width="7.5" layer="51" curve="90" cap="flat"/>
+<wire x1="-1" y1="0" x2="0" y2="-1" width="7.5" layer="51" curve="90" cap="flat"/>
+<circle x="0" y="0" radius="4.75" width="0.125" layer="21"/>
+<circle x="0" y="0" radius="2.8" width="0.125" layer="51"/>
+<text x="-0.75" y="-4.25" size="1" layer="21" font="vector">M5</text>
+<hole x="0" y="0" drill="5.5"/>
+<wire x1="-2.3094" y1="4" x2="2.3094" y2="4" width="0.127" layer="105"/>
+<wire x1="2.3094" y1="4" x2="4.6188" y2="0" width="0.127" layer="105"/>
+<wire x1="4.6188" y1="0" x2="2.3094" y2="-4" width="0.127" layer="105"/>
+<wire x1="2.3094" y1="-4" x2="-2.3094" y2="-4" width="0.127" layer="105"/>
+<wire x1="-4.6188" y1="0" x2="-2.3094" y2="-4" width="0.127" layer="105"/>
+<wire x1="-4.6188" y1="0" x2="-2.3094" y2="4" width="0.127" layer="105"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="4.95" width="4.6" layer="39"/>
+<circle x="0" y="0" radius="4.45" width="3.6" layer="41"/>
+<circle x="0" y="0" radius="4.95" width="4.6" layer="40"/>
+<circle x="0" y="0" radius="4.45" width="3.6" layer="42"/>
+<circle x="0" y="0" radius="4.45" width="3.6" layer="43"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HOLE">
@@ -211,6 +236,11 @@
 </technologies>
 </device>
 <device name="-M5-SOCKET-HEAD" package="M5-SOCKET-HEAD">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-M5-NUT" package="M5-NUT">
 <technologies>
 <technology name=""/>
 </technologies>

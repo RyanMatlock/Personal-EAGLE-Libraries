@@ -655,6 +655,8 @@
 <pin name="6" x="10.16" y="2.54" visible="pad" length="point" rot="R180"/>
 <pin name="7" x="10.16" y="-2.54" visible="pad" length="point" rot="R180"/>
 <pin name="8" x="10.16" y="-7.62" visible="pad" length="point" rot="R180"/>
+<text x="-10.16" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -912,7 +914,8 @@
 </devices>
 </deviceset>
 <deviceset name="XFMR-UMM" prefix="T" uservalue="yes">
-<description>Edcor UMM transformer</description>
+<description>Edcor UMM transformer&lt;br&gt;
+be sure to set attributes for documentation purposes</description>
 <gates>
 <gate name="G$1" symbol="UMM-X" x="0" y="0"/>
 </gates>

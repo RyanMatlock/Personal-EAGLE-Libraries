@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11,6 +11,16 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -74,16 +84,28 @@
 <layer number="108" name="MountingGrid" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="StencilDocu" color="20" fill="1" visible="yes" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -110,6 +132,11 @@
 <layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -455,6 +482,60 @@ from thru holes</text>
 <wire x1="-9.017" y1="8.509" x2="-9.017" y2="-8.509" width="0.127" layer="21"/>
 <text x="-8.89" y="9.144" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-8.89" y="-10.414" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="1101M1S3CQE2">
+<description>restrict/keepout layers sized for 2-56 nut</description>
+<pad name="O" x="-4.699" y="0" drill="1.016" shape="square"/>
+<pad name="P" x="0" y="0" drill="1.016" shape="octagon"/>
+<pad name="S" x="4.699" y="0" drill="1.016" shape="octagon"/>
+<circle x="-6.477" y="0" radius="0.359209375" width="0.127" layer="22"/>
+<wire x1="-6.35" y1="3.302" x2="-6.35" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="3.048" x2="-6.35" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-3.048" x2="-6.35" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-3.302" x2="6.35" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-3.302" x2="6.35" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-3.048" x2="6.35" y2="3.048" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.048" x2="6.35" y2="3.302" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.302" x2="-6.35" y2="3.302" width="0.127" layer="21"/>
+<text x="-6.35" y="3.81" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-6.35" y="-4.826" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-3.4925" y1="-2.0955" x2="3.4925" y2="-2.0955" width="0.127" layer="51"/>
+<wire x1="3.4925" y1="-2.0955" x2="3.4925" y2="2.0955" width="0.127" layer="51"/>
+<wire x1="3.4925" y1="2.0955" x2="-3.4925" y2="2.0955" width="0.127" layer="51"/>
+<wire x1="-3.4925" y1="2.0955" x2="-3.4925" y2="-2.0955" width="0.127" layer="51"/>
+<rectangle x1="-3.2385" y1="-1.8415" x2="0.4445" y2="1.8415" layer="51"/>
+<wire x1="-6.35" y1="3.048" x2="-9.779" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-9.779" y1="-3.048" x2="-6.35" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.048" x2="9.779" y2="3.048" width="0.127" layer="21"/>
+<wire x1="9.779" y1="-3.048" x2="6.35" y2="-3.048" width="0.127" layer="21"/>
+<hole x="-8.763" y="0" drill="2.3876"/>
+<hole x="8.763" y="0" drill="2.3876"/>
+<wire x1="9.779" y1="3.048" x2="9.779" y2="1.524" width="0.127" layer="51"/>
+<wire x1="9.779" y1="1.524" x2="8.763" y2="1.524" width="0.127" layer="51"/>
+<wire x1="8.763" y1="1.524" x2="7.239" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="7.239" y1="0" x2="8.763" y2="-1.524" width="0.127" layer="51" curve="90"/>
+<wire x1="8.763" y1="-1.524" x2="9.779" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="9.779" y1="-1.524" x2="9.779" y2="-3.048" width="0.127" layer="51"/>
+<wire x1="-9.779" y1="3.048" x2="-9.779" y2="1.524" width="0.127" layer="51"/>
+<wire x1="-9.779" y1="1.524" x2="-8.763" y2="1.524" width="0.127" layer="51"/>
+<wire x1="-8.763" y1="1.524" x2="-7.239" y2="0" width="0.127" layer="51" curve="-90"/>
+<wire x1="-7.239" y1="0" x2="-8.763" y2="-1.524" width="0.127" layer="51" curve="-90"/>
+<wire x1="-8.763" y1="-1.524" x2="-9.779" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="-9.779" y1="-1.524" x2="-9.779" y2="-3.048" width="0.127" layer="51"/>
+<circle x="-8.763" y="0" radius="2.794" width="0" layer="39"/>
+<circle x="8.763" y="0" radius="2.794" width="0" layer="39"/>
+<circle x="-8.763" y="0" radius="2.794" width="0" layer="42"/>
+<circle x="-8.763" y="0" radius="2.794" width="0" layer="40"/>
+<circle x="-8.763" y="0" radius="2.794" width="0" layer="43"/>
+<circle x="-8.763" y="0" radius="2.794" width="0" layer="41"/>
+<circle x="8.763" y="0" radius="2.794" width="0" layer="40"/>
+<circle x="8.763" y="0" radius="2.794" width="0" layer="42"/>
+<circle x="8.763" y="0" radius="2.794" width="0" layer="41"/>
+<circle x="8.763" y="0" radius="2.794" width="0" layer="43"/>
+<wire x1="-9.779" y1="3.048" x2="-9.779" y2="1.524" width="0.127" layer="21"/>
+<wire x1="-9.779" y1="-3.048" x2="-9.779" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="9.779" y1="3.048" x2="9.779" y2="1.524" width="0.127" layer="21"/>
+<wire x1="9.779" y1="-1.524" x2="9.779" y2="-3.048" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1167,6 +1248,23 @@ be sure to set attributes for documentation purposes
 <connect gate="C" pin="O" pad="7"/>
 <connect gate="C" pin="P" pad="8"/>
 <connect gate="C" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPDT" prefix="S" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1101M1S3" package="1101M1S3CQE2">
+<connects>
+<connect gate="G$1" pin="O" pad="O"/>
+<connect gate="G$1" pin="P" pad="P"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>

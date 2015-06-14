@@ -9,3 +9,6 @@
 # EAGLE cruft
 *.l#*
 *.scr
+
+# ./magzor is already a git repo
+/magzor/

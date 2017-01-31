@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="51" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -55,8 +55,8 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="31" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="23" fill="1" visible="yes" active="yes"/>
@@ -231,6 +231,228 @@ edge</text>
 <pad name="4" x="5" y="5" drill="1.8" diameter="2.2" shape="long" rot="R90"/>
 <pad name="5" x="2.5" y="5" drill="1.8" diameter="2.2" shape="long" rot="R90"/>
 </package>
+<package name="10137061-00021LF_OFF-CENTER">
+<description>Amphenol FCI 10137061-00021LF USB Type C (usb-c) female connector</description>
+<hole x="0" y="0" drill="0.675"/>
+<pad name="B12" x="0.8" y="-0.65" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B9" x="2.4" y="-0.65" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B7" x="3.2" y="-0.65" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B6" x="4" y="-0.65" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B4" x="4.8" y="-0.65" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B1" x="6.4" y="-0.65" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B11" x="1.2" y="-1.35" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B10" x="2" y="-1.35" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B8" x="2.8" y="-1.35" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B5" x="4.4" y="-1.35" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B3" x="5.2" y="-1.35" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B2" x="6" y="-1.35" drill="0.43" diameter="0.55" stop="no"/>
+<hole x="7.2" y="0" drill="0.95"/>
+<pad name="NC3" x="-0.89" y="-1.25" drill="1.1" diameter="1.4224"/>
+<pad name="NC1" x="8.09" y="-1.25" drill="1.1" diameter="1.4224"/>
+<pad name="NC4" x="-0.89" y="-5.7" drill="1.1" diameter="1.4224"/>
+<pad name="NC2" x="8.09" y="-5.7" drill="1.1" diameter="1.4224"/>
+<smd name="A12" x="6.35" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A11" x="5.85" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A10" x="5.35" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A9" x="4.85" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A8" x="4.35" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A7" x="3.85" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A6" x="3.35" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A5" x="2.85" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A4" x="2.35" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A3" x="1.85" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A2" x="1.35" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A1" x="0.85" y="0.56" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<rectangle x1="0.7" y1="0.11" x2="1" y2="1.01" layer="29"/>
+<rectangle x1="1.2" y1="0.11" x2="1.5" y2="1.01" layer="29"/>
+<rectangle x1="1.7" y1="0.11" x2="2" y2="1.01" layer="29"/>
+<rectangle x1="2.2" y1="0.11" x2="2.5" y2="1.01" layer="29"/>
+<rectangle x1="2.7" y1="0.11" x2="3" y2="1.01" layer="29"/>
+<rectangle x1="3.2" y1="0.11" x2="3.5" y2="1.01" layer="29"/>
+<rectangle x1="3.7" y1="0.11" x2="4" y2="1.01" layer="29"/>
+<rectangle x1="4.2" y1="0.11" x2="4.5" y2="1.01" layer="29"/>
+<rectangle x1="4.7" y1="0.11" x2="5" y2="1.01" layer="29"/>
+<rectangle x1="5.2" y1="0.11" x2="5.5" y2="1.01" layer="29"/>
+<rectangle x1="5.7" y1="0.11" x2="6" y2="1.01" layer="29"/>
+<rectangle x1="6.2" y1="0.11" x2="6.5" y2="1.01" layer="29"/>
+<circle x="0.8" y="-0.65" radius="0.16" width="0.32" layer="29"/>
+<circle x="2.4" y="-0.65" radius="0.16" width="0.32" layer="29"/>
+<circle x="3.2" y="-0.65" radius="0.16" width="0.32" layer="29"/>
+<circle x="4" y="-0.65" radius="0.16" width="0.32" layer="29"/>
+<circle x="4.8" y="-0.65" radius="0.16" width="0.32" layer="29"/>
+<circle x="6.4" y="-0.65" radius="0.16" width="0.32" layer="29"/>
+<circle x="1.2" y="-1.35" radius="0.16" width="0.32" layer="29"/>
+<circle x="2" y="-1.35" radius="0.16" width="0.32" layer="29"/>
+<circle x="2.8" y="-1.35" radius="0.16" width="0.32" layer="29"/>
+<circle x="4.4" y="-1.35" radius="0.16" width="0.32" layer="29"/>
+<circle x="5.2" y="-1.35" radius="0.16" width="0.32" layer="29"/>
+<circle x="6" y="-1.35" radius="0.16" width="0.32" layer="29"/>
+<wire x1="-1.225" y1="-7.05" x2="8.425" y2="-7.05" width="0.1" layer="49"/>
+<text x="2.4" y="-6.6" size="0.4064" layer="49" font="vector">PCB edge</text>
+<smd name="NC5" x="0.23" y="1.55" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC6" x="2.35" y="1.55" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC7" x="4.85" y="1.55" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC8" x="6.98" y="1.55" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<rectangle x1="-0.02" y1="1.4" x2="0.48" y2="1.7" layer="29"/>
+<rectangle x1="2.1" y1="1.4" x2="2.6" y2="1.7" layer="29"/>
+<rectangle x1="4.6" y1="1.4" x2="5.1" y2="1.7" layer="29"/>
+<rectangle x1="6.73" y1="1.4" x2="7.23" y2="1.7" layer="29"/>
+<wire x1="-1.225" y1="-8.5" x2="3.6" y2="-8.5" width="0.127" layer="51"/>
+<wire x1="3.6" y1="-8.5" x2="8.425" y2="-8.5" width="0.127" layer="51"/>
+<wire x1="-1.225" y1="1.65" x2="3.6" y2="1.65" width="0.127" layer="51"/>
+<wire x1="3.6" y1="1.65" x2="8.425" y2="1.65" width="0.127" layer="51"/>
+<wire x1="3.6" y1="-8.5" x2="3.6" y2="1.65" width="0.04" layer="51"/>
+<wire x1="-1.225" y1="-8.5" x2="-1.225" y2="1.65" width="0.127" layer="51"/>
+<wire x1="8.425" y1="-8.5" x2="8.425" y2="1.65" width="0.127" layer="51"/>
+</package>
+<package name="10137061-00021LF">
+<description>Amphenol FCI 10137061-00021LF USB Type C (usb-c) female connector</description>
+<hole x="-3.6" y="3.24" drill="0.675"/>
+<pad name="B12" x="-2.8" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B9" x="-1.2" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B7" x="-0.4" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B6" x="0.4" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B4" x="1.2" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B1" x="2.8" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B11" x="-2.4" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B10" x="-1.6" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B8" x="-0.8" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B5" x="0.8" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B3" x="1.6" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B2" x="2.4" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<hole x="3.6" y="3.24" drill="0.95"/>
+<pad name="NC3" x="-4.49" y="1.99" drill="1.1" diameter="1.4224"/>
+<pad name="NC1" x="4.49" y="1.99" drill="1.1" diameter="1.4224"/>
+<pad name="NC4" x="-4.49" y="-2.46" drill="1.1" diameter="1.4224"/>
+<pad name="NC2" x="4.49" y="-2.46" drill="1.1" diameter="1.4224"/>
+<smd name="A12" x="2.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A11" x="2.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A10" x="1.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A9" x="1.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A8" x="0.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A7" x="0.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A6" x="-0.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A5" x="-0.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A4" x="-1.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A3" x="-1.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A2" x="-2.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A1" x="-2.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<rectangle x1="-2.9" y1="3.35" x2="-2.6" y2="4.25" layer="29"/>
+<rectangle x1="-2.4" y1="3.35" x2="-2.1" y2="4.25" layer="29"/>
+<rectangle x1="-1.9" y1="3.35" x2="-1.6" y2="4.25" layer="29"/>
+<rectangle x1="-1.4" y1="3.35" x2="-1.1" y2="4.25" layer="29"/>
+<rectangle x1="-0.9" y1="3.35" x2="-0.6" y2="4.25" layer="29"/>
+<rectangle x1="-0.4" y1="3.35" x2="-0.1" y2="4.25" layer="29"/>
+<rectangle x1="0.1" y1="3.35" x2="0.4" y2="4.25" layer="29"/>
+<rectangle x1="0.6" y1="3.35" x2="0.9" y2="4.25" layer="29"/>
+<rectangle x1="1.1" y1="3.35" x2="1.4" y2="4.25" layer="29"/>
+<rectangle x1="1.6" y1="3.35" x2="1.9" y2="4.25" layer="29"/>
+<rectangle x1="2.1" y1="3.35" x2="2.4" y2="4.25" layer="29"/>
+<rectangle x1="2.6" y1="3.35" x2="2.9" y2="4.25" layer="29"/>
+<circle x="-2.8" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="-1.2" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="-0.4" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="0.4" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="1.2" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="2.8" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="-2.4" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="-1.6" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="-0.8" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="0.8" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="1.6" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="2.4" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<wire x1="-4.825" y1="-3.81" x2="4.825" y2="-3.81" width="0.1" layer="49"/>
+<text x="-1.2" y="-3.36" size="0.4064" layer="49" font="vector">PCB edge</text>
+<smd name="NC5" x="-3.37" y="4.79" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC6" x="-1.25" y="4.79" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC7" x="1.25" y="4.79" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC8" x="3.38" y="4.79" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<rectangle x1="-3.62" y1="4.64" x2="-3.12" y2="4.94" layer="29"/>
+<rectangle x1="-1.5" y1="4.64" x2="-1" y2="4.94" layer="29"/>
+<rectangle x1="1" y1="4.64" x2="1.5" y2="4.94" layer="29"/>
+<rectangle x1="3.13" y1="4.64" x2="3.63" y2="4.94" layer="29"/>
+<wire x1="-4.825" y1="-5.26" x2="0" y2="-5.26" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.26" x2="4.825" y2="-5.26" width="0.127" layer="51"/>
+<wire x1="-4.825" y1="4.89" x2="0" y2="4.89" width="0.127" layer="51"/>
+<wire x1="0" y1="4.89" x2="4.825" y2="4.89" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.26" x2="0" y2="4.89" width="0.04" layer="51"/>
+<wire x1="-4.825" y1="-5.26" x2="-4.825" y2="4.89" width="0.127" layer="51"/>
+<wire x1="4.825" y1="-5.26" x2="4.825" y2="4.89" width="0.127" layer="51"/>
+</package>
+<package name="10137061-00021LF_VERBOSE">
+<description>Amphenol FCI 10137061-00021LF USB Type C (usb-c) female connector (verbose, i.e. full pad/smd description)</description>
+<hole x="-3.6" y="3.24" drill="0.675"/>
+<pad name="B12/GND" x="-2.8" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B9/VBUS" x="-1.2" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B7/DN2" x="-0.4" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B6/DP2" x="0.4" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B4/VBUS" x="1.2" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B1/GND" x="2.8" y="2.59" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B11/SSRXP1" x="-2.4" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B10/SSRXN1" x="-1.6" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B8/SBU2" x="-0.8" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B5/CC2" x="0.8" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B3/SSTXN2" x="1.6" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<pad name="B2/SSTXP2" x="2.4" y="1.89" drill="0.43" diameter="0.55" stop="no"/>
+<hole x="3.6" y="3.24" drill="0.95"/>
+<pad name="NC3" x="-4.49" y="1.99" drill="1.1" diameter="1.4224"/>
+<pad name="NC1" x="4.49" y="1.99" drill="1.1" diameter="1.4224"/>
+<pad name="NC4" x="-4.49" y="-2.46" drill="1.1" diameter="1.4224"/>
+<pad name="NC2" x="4.49" y="-2.46" drill="1.1" diameter="1.4224"/>
+<smd name="A12/GND" x="2.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A11/SSRXP2" x="2.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A10/SSRXN2" x="1.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A9/VBUS" x="1.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A8/SBU1" x="0.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A7/DN1" x="0.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A6/DP1" x="-0.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A5/CC1" x="-0.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A4/VBUS" x="-1.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A3/SSTXN1" x="-1.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A2/SSTXP1" x="-2.25" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<smd name="A1/GND" x="-2.75" y="3.8" dx="0.3" dy="0.9" layer="1" stop="no"/>
+<rectangle x1="-2.9" y1="3.35" x2="-2.6" y2="4.25" layer="29"/>
+<rectangle x1="-2.4" y1="3.35" x2="-2.1" y2="4.25" layer="29"/>
+<rectangle x1="-1.9" y1="3.35" x2="-1.6" y2="4.25" layer="29"/>
+<rectangle x1="-1.4" y1="3.35" x2="-1.1" y2="4.25" layer="29"/>
+<rectangle x1="-0.9" y1="3.35" x2="-0.6" y2="4.25" layer="29"/>
+<rectangle x1="-0.4" y1="3.35" x2="-0.1" y2="4.25" layer="29"/>
+<rectangle x1="0.1" y1="3.35" x2="0.4" y2="4.25" layer="29"/>
+<rectangle x1="0.6" y1="3.35" x2="0.9" y2="4.25" layer="29"/>
+<rectangle x1="1.1" y1="3.35" x2="1.4" y2="4.25" layer="29"/>
+<rectangle x1="1.6" y1="3.35" x2="1.9" y2="4.25" layer="29"/>
+<rectangle x1="2.1" y1="3.35" x2="2.4" y2="4.25" layer="29"/>
+<rectangle x1="2.6" y1="3.35" x2="2.9" y2="4.25" layer="29"/>
+<circle x="-2.8" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="-1.2" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="-0.4" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="0.4" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="1.2" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="2.8" y="2.59" radius="0.16" width="0.32" layer="29"/>
+<circle x="-2.4" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="-1.6" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="-0.8" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="0.8" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="1.6" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<circle x="2.4" y="1.89" radius="0.16" width="0.32" layer="29"/>
+<wire x1="-4.825" y1="-3.81" x2="4.825" y2="-3.81" width="0.1" layer="49"/>
+<text x="-1.2" y="-3.36" size="0.4064" layer="49" font="vector">PCB edge</text>
+<smd name="NC5" x="-3.37" y="4.79" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC6" x="-1.25" y="4.79" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC7" x="1.25" y="4.79" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<smd name="NC8" x="3.38" y="4.79" dx="0.5" dy="0.3" layer="1" stop="no"/>
+<rectangle x1="-3.62" y1="4.64" x2="-3.12" y2="4.94" layer="29"/>
+<rectangle x1="-1.5" y1="4.64" x2="-1" y2="4.94" layer="29"/>
+<rectangle x1="1" y1="4.64" x2="1.5" y2="4.94" layer="29"/>
+<rectangle x1="3.13" y1="4.64" x2="3.63" y2="4.94" layer="29"/>
+<wire x1="-4.825" y1="-5.26" x2="0" y2="-5.26" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.26" x2="4.825" y2="-5.26" width="0.127" layer="51"/>
+<wire x1="-4.825" y1="4.89" x2="0" y2="4.89" width="0.127" layer="51"/>
+<wire x1="0" y1="4.89" x2="4.825" y2="4.89" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.26" x2="0" y2="4.89" width="0.04" layer="51"/>
+<wire x1="-4.825" y1="-5.26" x2="-4.825" y2="4.89" width="0.127" layer="51"/>
+<wire x1="4.825" y1="-5.26" x2="4.825" y2="4.89" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2X04">
@@ -371,6 +593,92 @@ edge</text>
 <text x="3.81" y="0.254" size="1.27" layer="97">R</text>
 <text x="3.81" y="-2.286" size="1.27" layer="97">S</text>
 </symbol>
+<symbol name="2X12-AB">
+<wire x1="-5.08" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-2.286" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="-2.286" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="10.16" x2="-2.286" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-2.286" y2="5.08" width="0.1524" layer="94"/>
+<circle x="-1.27" y="12.7" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="10.16" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="7.62" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="5.08" radius="0.898" width="0.254" layer="94"/>
+<text x="-5.08" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A1" x="-7.62" y="12.7" visible="pad" length="short"/>
+<pin name="B1" x="7.62" y="12.7" visible="pad" length="short" rot="R180"/>
+<pin name="A2" x="-7.62" y="10.16" visible="pad" length="short"/>
+<pin name="B2" x="7.62" y="10.16" visible="pad" length="short" rot="R180"/>
+<pin name="A3" x="-7.62" y="7.62" visible="pad" length="short"/>
+<pin name="B3" x="7.62" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="A4" x="-7.62" y="5.08" visible="pad" length="short"/>
+<pin name="B4" x="7.62" y="5.08" visible="pad" length="short" rot="R180"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="2.286" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="2.286" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="2.286" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="2.286" y2="5.08" width="0.1524" layer="94"/>
+<circle x="1.27" y="12.7" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="10.16" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="7.62" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="5.08" radius="0.898" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-2.286" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.286" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.286" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.286" y2="-5.08" width="0.1524" layer="94"/>
+<circle x="-1.27" y="2.54" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="0" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="-2.54" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="-5.08" radius="0.898" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="2.286" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="2.286" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.286" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="2.286" y2="-5.08" width="0.1524" layer="94"/>
+<circle x="1.27" y="2.54" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="0" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="-2.54" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="-5.08" radius="0.898" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-2.286" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-2.286" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-2.286" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-2.286" y2="-15.24" width="0.1524" layer="94"/>
+<circle x="-1.27" y="-7.62" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="-10.16" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="-12.7" radius="0.898" width="0.254" layer="94"/>
+<circle x="-1.27" y="-15.24" radius="0.898" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="2.286" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="2.286" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="2.286" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="2.286" y2="-15.24" width="0.1524" layer="94"/>
+<circle x="1.27" y="-7.62" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="-10.16" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="-12.7" radius="0.898" width="0.254" layer="94"/>
+<circle x="1.27" y="-15.24" radius="0.898" width="0.254" layer="94"/>
+<pin name="A5" x="-7.62" y="2.54" visible="pad" length="short"/>
+<pin name="A6" x="-7.62" y="0" visible="pad" length="short"/>
+<pin name="A7" x="-7.62" y="-2.54" visible="pad" length="short"/>
+<pin name="A8" x="-7.62" y="-5.08" visible="pad" length="short"/>
+<pin name="A9" x="-7.62" y="-7.62" visible="pad" length="short"/>
+<pin name="A10" x="-7.62" y="-10.16" visible="pad" length="short"/>
+<pin name="A11" x="-7.62" y="-12.7" visible="pad" length="short"/>
+<pin name="A12" x="-7.62" y="-15.24" visible="pad" length="short"/>
+<pin name="B5" x="7.62" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="B6" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="B7" x="7.62" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="B8" x="7.62" y="-5.08" visible="pad" length="short" rot="R180"/>
+<pin name="B9" x="7.62" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="B10" x="7.62" y="-10.16" visible="pad" length="short" rot="R180"/>
+<pin name="B11" x="7.62" y="-12.7" visible="pad" length="short" rot="R180"/>
+<pin name="B12" x="7.62" y="-15.24" visible="pad" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1X06" prefix="J" uservalue="yes">
@@ -440,6 +748,75 @@ edge</text>
 <connect gate="G$1" pin="R" pad="3.R"/>
 <connect gate="G$1" pin="S" pad="1.S"/>
 <connect gate="G$1" pin="T" pad="2.T"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB-C" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="2X12-AB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-10137061-00021LF" package="10137061-00021LF">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A10" pad="A10"/>
+<connect gate="G$1" pin="A11" pad="A11"/>
+<connect gate="G$1" pin="A12" pad="A12"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="A6" pad="A6"/>
+<connect gate="G$1" pin="A7" pad="A7"/>
+<connect gate="G$1" pin="A8" pad="A8"/>
+<connect gate="G$1" pin="A9" pad="A9"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="B10" pad="B10"/>
+<connect gate="G$1" pin="B11" pad="B11"/>
+<connect gate="G$1" pin="B12" pad="B12"/>
+<connect gate="G$1" pin="B2" pad="B2"/>
+<connect gate="G$1" pin="B3" pad="B3"/>
+<connect gate="G$1" pin="B4" pad="B4"/>
+<connect gate="G$1" pin="B5" pad="B5"/>
+<connect gate="G$1" pin="B6" pad="B6"/>
+<connect gate="G$1" pin="B7" pad="B7"/>
+<connect gate="G$1" pin="B8" pad="B8"/>
+<connect gate="G$1" pin="B9" pad="B9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-10137061-00021LF_VERBOSE" package="10137061-00021LF_VERBOSE">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1/GND"/>
+<connect gate="G$1" pin="A10" pad="A10/SSRXN2"/>
+<connect gate="G$1" pin="A11" pad="A11/SSRXP2"/>
+<connect gate="G$1" pin="A12" pad="A12/GND"/>
+<connect gate="G$1" pin="A2" pad="A2/SSTXP1"/>
+<connect gate="G$1" pin="A3" pad="A3/SSTXN1"/>
+<connect gate="G$1" pin="A4" pad="A4/VBUS"/>
+<connect gate="G$1" pin="A5" pad="A5/CC1"/>
+<connect gate="G$1" pin="A6" pad="A6/DP1"/>
+<connect gate="G$1" pin="A7" pad="A7/DN1"/>
+<connect gate="G$1" pin="A8" pad="A8/SBU1"/>
+<connect gate="G$1" pin="A9" pad="A9/VBUS"/>
+<connect gate="G$1" pin="B1" pad="B1/GND"/>
+<connect gate="G$1" pin="B10" pad="B10/SSRXN1"/>
+<connect gate="G$1" pin="B11" pad="B11/SSRXP1"/>
+<connect gate="G$1" pin="B12" pad="B12/GND"/>
+<connect gate="G$1" pin="B2" pad="B2/SSTXP2"/>
+<connect gate="G$1" pin="B3" pad="B3/SSTXN2"/>
+<connect gate="G$1" pin="B4" pad="B4/VBUS"/>
+<connect gate="G$1" pin="B5" pad="B5/CC2"/>
+<connect gate="G$1" pin="B6" pad="B6/DP2"/>
+<connect gate="G$1" pin="B7" pad="B7/DN2"/>
+<connect gate="G$1" pin="B8" pad="B8/SBU2"/>
+<connect gate="G$1" pin="B9" pad="B9/VBUS"/>
 </connects>
 <technologies>
 <technology name=""/>
